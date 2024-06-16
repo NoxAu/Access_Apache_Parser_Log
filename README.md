@@ -50,10 +50,10 @@ python main.py
 ## Параметры
 ### get:
 No parameters : no filtering
-```-ip : filter by IP address
+`-ip : filter by IP address
 -date : filter by date
 -start_date : filter on the left border of the date interval in logs (used together with end_date)
--end_date : filter on the right border of the date interval in logs (used together with start_date)```
+-end_date : filter on the right border of the date interval in logs (used together with start_date)`
 
 Примеры использования:
 ```sh 
