@@ -1,0 +1,45 @@
+Access Apache Logs Aggregator
+
+Request format:
+*Type of request* [*Request Parameter*]
+**************************************************************
+TYPES OF REQUEST
+-
+get : get the data
+-
+parse : aggregate data from a file to a database
+-
+help : show this text again
+**************************************************************
+PARAMETERS
+  get:
+    No parameters : no filtering
+    -ip : filter by IP address
+    -date : filter by date
+    -start_date : filter on the left border of the date interval in logs (used together with end_date)
+    -end_date : filter on the right border of the date interval in logs (used together with start_date)
+**************************************************************
+USAGE EXAMPLES
+-
+get -ip 127.0.0.1
+-
+get -ip 127.0.0.1 -date 2024-06-10
+-
+get -ip 127.0.0.1 -start_date 2024-06-10 -end_date 2024-06-12
+-
+**************************************************************
+DATA FORMAT
+The date in the request is specified in the format "yyyy-mm-dd"
+Examples:
+2024-06-10
+-
+2024-12-31
+-
+The IP address is specified in the standard format "ddd.ddd.ddd.ddd"
+Examples:
+127.0.0.1
+-
+255.255.255.255
+-
+
+To exit, use 'w'

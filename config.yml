@@ -1,0 +1,14 @@
+app:
+  # automatic aggregation of logs
+  schedule_update_logs_enabled: True
+  # aggregation interval in seconds
+  schedule_update_logs_delay: 30
+  # automatic launch of the Apache web server
+  start_apache_server: True
+
+logs:
+  format: '%h %l %u %t \"%r\" %>s %b'
+  # the path to the folder with logs
+  path: server/Apache24/logs
+  # the name of the file with access logs
+  access_log: access.log
