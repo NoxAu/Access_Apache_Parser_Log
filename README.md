@@ -44,16 +44,16 @@ python main.py
 *Type of request* [*Request Parameter*]
 ```
 ## Виды запроса
-*get*: get the data
-*parse*: aggregate data from a file to a database
-*help*: show this text again
+*get*: get the data  
+*parse*: aggregate data from a file to a database  
+*help*: show this text again  
 ## Параметры
 ### get:
 No parameters : no filtering
-`-ip : filter by IP address
--date : filter by date
--start_date : filter on the left border of the date interval in logs (used together with end_date)
--end_date : filter on the right border of the date interval in logs (used together with start_date)`
+-ip : filter by IP address  
+-date : filter by date  
+-start_date : filter on the left border of the date interval in logs (used together with end_date)  
+-end_date : filter on the right border of the date interval in logs (used together with start_date)  
 
 Примеры использования:
 ```sh 
@@ -62,16 +62,19 @@ get -ip 127.0.0.1 -date 2024-06-10
 get -ip 127.0.0.1 -start_date 2024-06-10 -end_date 2024-06-12
 ```
 # Формат данных 
-The date in the request is specified in the format "yyyy-mm-dd"
-Examples:
-2024-06-10
+The date in the request is specified in the format "yyyy-mm-dd"  
+Examples:  
+```sh
+2024-06-10  
 2024-12-31
-The IP address is specified in the standard format "ddd.ddd.ddd.ddd"
+```
+The IP address is specified in the standard format "ddd.ddd.ddd.ddd"  
 Examples:
+```sh
 127.0.0.1
 255.255.255.255
 ```
 # Выход из приложения
-To exit, use```sh
+To exit, use ```sh
 w```
 
