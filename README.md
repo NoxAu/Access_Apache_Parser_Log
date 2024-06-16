@@ -75,6 +75,6 @@ Examples:
 255.255.255.255
 ```
 # Выход из приложения
-To exit, use ```sh
+To exit, use ```
 w```
 
